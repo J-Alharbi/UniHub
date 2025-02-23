@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Club leader Registeration</title>
+    <link rel="stylesheet" href="student.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="UniHub Logo" class="logo">
+    </header>
+
+    <h1>Club Registration</h1>
+    <h4 class="title">Please fill in the following information</h4>
+
+    <div class="login-container">
+        <form method="post" action="login.html">
+            <label for="name">Name:</label>
+            <input id="name" name="Name" type="text" required><br>
+
+            <label for="email">Email:</label>
+            <input id="email" name="Email" type="email" required><br>
+
+            <label for="pnumber">Phone Number:</label>
+            <input id="pnumber" name="Pnumber" type="tel" placeholder="05XXXXXXXXX" required><br>
+
+            <label for="password">Password:</label>
+            <input id="password" name="Password" type="password" required><br>
+
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="7" cols="30" required></textarea><br>
+
+            <label for="location">Location:</label>
+            <input id="location" name="loc" type="text" required><br>
+
+            <label for="photo">Profile Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*"><br>
+
+            <input class="btn" type="submit" value="Register">
+            <input class="red-btn" type="reset" value="Clear">
+        </form>
+    </div>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+    <footer>
+        <p>&copy; 2025 UniHub. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+
+
+</html>

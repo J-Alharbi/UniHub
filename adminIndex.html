@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="student.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#club-approval">Club Approval</a>
+            <a href="#manage-activities">Manage Activity Categories</a>
+        </nav>
+        <img src="images/logo.png" alt="UniHub Logo" class="logo">
+        <h1>Welcome to the Admin Dashboard!</h1>
+    </header>
+
+    <div class="medium-container">
+        <h2 id="club-approval">Approve or Disapprove Clubs</h2>
+        <div class="club-approval">
+            <table>
+                <tr>
+                    <th>Club Name</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="FTCProfile.html">Future Technology Club</a>
+                    </td>
+                    <td>
+                        <div class="approval">
+                            <button class="green-btn small">Approve</button>
+                            <button class="red-btn small">Disapprove</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="FTCProfile.html">Social Cultural Club</a>
+                    </td>
+                    <td>
+                        <div class="approval">
+                            <button class="green-btn small">Approve</button>
+                            <button class="red-btn small">Disapprove</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="FTCProfile.html">Cybersecurity Club</a>
+                    </td>
+                    <td>
+                        <div class="approval">
+                            <button class="green-btn small">Approve</button>
+                            <button class="red-btn small">Disapprove</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="FTCProfile.html">Google Developer Students Club</a>
+                    </td>
+                    <td>
+                        <div class="approval">
+                            <button class="green-btn small">Approve</button>
+                            <button class="red-btn small">Disapprove</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="medium-container">
+        <h2>Manage Activity Categories</h2>
+        <div class="add-category">
+            <input type="text" value="new-category" placeholder="Enter new category">
+            <button class="btn">Add Category</button>
+        </div>
+        <ul class="activity-list">
+            <li>Reading <button class="red-btn small">Delete</button></li>
+            <li>Sports <button class="red-btn small">Delete</button></li>
+            <li>Art <button class="red-btn small">Delete</button></li>
+            <li>Programming <button class="red-btn small">Delete</button></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 University Clubs Hub. All rights reserved.</p>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+
+</html>

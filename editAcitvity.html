@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Activity</title>
+    <link rel="stylesheet" href="student.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="profile-icon">
+            <a href="clubProfile.html"><img src="images/profile.svg" alt="profile icon"></a>
+        </div>
+        <nav class="nav">
+            <a href="clubIndex.html">Home</a>
+            <a href="registrationList.html">Registration List</a>
+            <a href="clubActivities.html">Activities</a>
+        </nav>
+        <div class="logout">
+            <a href="login.html"><img src="images/logout.svg" alt="logout icon"></a>
+        </div>
+        <img src="images/logo.png" alt="UniHub Logo" class="logo">
+    </header>
+
+    <h2>Edit Profile</h2>
+    <div class="login-container">
+        <img src="images/activityProfile.png" alt="activity icon" width="42" height="42">
+        <form>
+            <label for="actTitle"> Activity Title
+                <input type="text" id="actTitle" value="Break the Ice Meeting">
+            </label>
+            <label for="description"> Activity Description
+                <textarea name="description" id="description"
+                    placeholder="Break the ice meeting is to gather the club members and break the ice between them "
+                    rows="4"></textarea>
+            </label>
+            <label for="ActImage"> Activity Photo
+                <input type="file" id="ActImage" name="ActImage" accept="image/*">
+            </label>
+            <label for="startDate"> Start Date
+                <input type="date" id="startDate" value="2025-01-01">
+            </label>
+            <label for="startTime"> Start Time
+                <input type="time" id="startTime" value="14:30">
+            </label>
+            <label for="endDate"> End Date
+                <input type="date" id="endDate" value="2025-02-01">
+            </label>
+            <label for="endTime"> End Time
+                <input type="time" id="endTime" value="12:00">
+            </label>
+            <label for="cat">Category
+                <select name="category" id="cat">
+                    <option label="Select a category" selected disabled></option>
+                    <option value="Reading">Reading </option>
+                    <option value="Sports">Sports</option>
+                    <option value="Art">Art</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Science">Science</option>
+                </select>
+            </label>
+            <label for="maxNum"> Maximum Number of Registrations
+                <input type="number" id="maxNum" min="0" value="10">
+            </label>
+            <input class="btn" type="submit" value="Save Changes"> <!-- AN alert message to conform saving the change-->
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UniHub. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+
+</html>

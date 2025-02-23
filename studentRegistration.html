@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Student register</title>
+  <link rel="stylesheet" type="text/css" href="student.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="UniHub Logo" class="logo">
+  </header>
+
+  <h1>Student Registration</h1>
+  <h4 class="title">Please fill in the following information</h4>
+
+  <div class="login-container">
+    <form method="post" action="login.html">
+
+      <label for="firstName">First Name: </label>
+      <input id="firstName" type="text" required><br>
+
+      <label for="lastName">Last Name: </label>
+      <input id="lastName" type="text" required><br>
+
+      <label for="ID">Student ID: </label>
+      <input id="ID" type="text" pattern="[0-9]{10}" required><br>
+
+      <label for="major">Major:
+        <select id="major" name="major" required>
+          <option label="Choose a major" disabled selected></option>
+          <option value="Software Engineering">Software Engineering</option>
+          <option value="Business Administration">Business</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Medicine">Medicine</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Law">Law</option>
+          <option value="Languages">Languages and Translation</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label for="phone">Phone Number: </label>
+      <input id="phone" type="tel" pattern="[0-9]{10}" placeholder="05XXXXXXXX" required><br>
+
+      <label for="email">Email: </label>
+      <input id="email" type="email" required><br>
+
+      <label for="Password">Password: </label>
+      <input id="Password" type="Password" required><br>
+
+      <label for="photo">Profile Photo (optional): </label>
+      <input id="photo" type="file" accept="image/*"><br>
+
+      <input class="btn" type="submit" value="Register">
+    </form>
+  </div>
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
+
+  <footer>
+    <p>&copy; 2025 UniHub. All rights reserved.</p>
+    <a href="contact.html">Contact Us</a>
+  </footer>
+
+</body>
+
+</html>

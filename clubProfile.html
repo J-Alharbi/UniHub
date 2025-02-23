@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Manage My profile</title>
+    <link rel="stylesheet" href="student.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="profile-icon">
+            <a href="clubProfile.html"><img src="images/profile.svg" alt="profile icon"></a>
+        </div>
+        <nav class="nav">
+            <a href="clubIndex.html">Home</a>
+            <a href="registrationList.html">Registration List</a>
+            <a href="clubActivities.html">Activities</a>
+        </nav>
+        <div class="logout">
+            <a href="login.html"><img src="images/logout.svg" alt="logout icon"></a>
+        </div>
+        <img src="images/logo.png" alt="UniHub Logo" class="logo">
+        <h1>Hi Future Technology Club!</h1>
+    </header>
+
+    <div class="login-container">
+        <h2>Edit Profile</h2>
+        <img src="images/user.png" width="150" height="150" alt="Profile picture">
+        <form method="post">
+            <label for="name">Name:</label>
+            <input id="name" name="Name" type="text" value="FTC">
+
+            <label for="email">Email:</label>
+            <input id="email" name="Email" type="email" value="FTC@club.ksu.edu.sa">
+
+            <label for="pnumber">Phone Number:</label>
+            <input id="pnumber" name="Pnumber" type="tel" value="0555555555">
+
+            <label for="password">Password:</label>
+            <input id="password" name="Password" type="password" placeholder="Enter new password">
+
+            <label for="description">Brief Description:</label>
+            <textarea id="description" name="description" rows="7" cols="30"></textarea>
+
+            <label for="location">Location:</label>
+            <input id="location" name="loc" type="text" value="Riyadh">
+
+            <label for="photo">Edit Profile Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+
+            <input class="btn" type="submit" value="Save Changes">
+            <input class="red-btn" type="button" value="Delete Club">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UniHub. All rights reserved.</p>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+
+</html>
